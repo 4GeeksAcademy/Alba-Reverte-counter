@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SecondsCounter } from "../../Counter";
 
+
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -31,12 +32,25 @@ const Home = () => {
 				<div className="boxcounter">
 					<SecondsCounter counter = {seconds}/>
 				</div>
-				{/* <button onClick={}>Pause</button> */}
+
+				{/* <Boton /> */}
 				
+				
+				<div class="d-grid gap-2 col-6 mx-auto">
+  					<button class="btn btn-light m-2" type="button">Pause</button>
+ 				    <button class="btn btn-light m-2" type="button">Reset</button>
+				</div>
+			
 			
 		
 		</div>
 	);
+
+	// document
+    // .querySelector("#btn-card")
+    // .addEventListener("click", () => generateRandomCard());
 };
+
+
 
 export default Home;

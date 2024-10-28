@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 export const SecondsCounter = ({ counter }) => {
 
@@ -18,12 +19,13 @@ export const SecondsCounter = ({ counter }) => {
   }, [counter]);
 
   return (
-    <div className='container d-flex'>
+    <div className='container d-flex justify-content-center'>
       <div className='valueContainer'>
-        {
-          secondsValues[6] ? secondsValues[6] : 0
-        }
+
+      <i class="fa-regular fa-clock"></i>
+
       </div>
+      
       <div className='valueContainer'>
         {
           secondsValues[5] ? secondsValues[5] : 0
@@ -57,3 +59,7 @@ export const SecondsCounter = ({ counter }) => {
     </div>
   )
 } 
+
+PropTypes.counter = {
+    counter: PropTypes.number,
+};
